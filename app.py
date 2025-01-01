@@ -4,10 +4,10 @@ import pyodbc
 # SQL Server 数据库连接
 def get_connection():
     conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
-                          'SERVER=your_server_address;'
-                          'DATABASE=your_database_name;'
-                          'UID=your_username;'
-                          'PWD=your_password')
+                          'SERVER=rm-bp13ik5iwqgz1pg6mfo.sqlserver.rds.aliyuncs.com,3433;'
+                          'DATABASE=InventorySystem;'
+                          'UID=www15624008565;'
+                          'PWD=Wycl15624008565')
     return conn
 
 # 插入库存功能
